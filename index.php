@@ -30,8 +30,15 @@
             <i class="fas fa-lock"></i>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <label for="password">Password</label>
+            <div id="passwordHelp" class="popup">
+                <p id="length" class="invalid">Minimum 8 characters</p>
+                <p id="uppercase" class="invalid">At least one uppercase letter</p>
+                <p id="lowercase" class="invalid">At least one lowercase letter</p>
+                <p id="number" class="invalid">At least one number</p>
+                <p id="special" class="invalid">At least one special character (!@#$%^&*)</p>
+            </div>
         </div>
-       <input type="submit" class="btn" value="Sign Up" name="signUp">
+        <input type="submit" class="btn" value="Sign Up" name="signUp">
       </form>
       <p class="or">
         ----------or--------
@@ -41,7 +48,7 @@
         <i class="fab fa-facebook"></i>
       </div>
       <div class="links">
-        <p>Already Have Account ?</p>
+        <p>Already Have Account?</p>
         <button id="signInButton">Sign In</button>
       </div>
     </div>
@@ -51,12 +58,12 @@
         <form method="post" action="register.php">
           <div class="input-group">
               <i class="fas fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="Email" required>
+              <input type="email" name="email" id="emailSignIn" placeholder="Email" required>
               <label for="email">Email</label>
           </div>
           <div class="input-group">
               <i class="fas fa-lock"></i>
-              <input type="password" name="password" id="password" placeholder="Password" required>
+              <input type="password" name="password" id="passwordSignIn" placeholder="Password" required>
               <label for="password">Password</label>
           </div>
           <p class="recover">
@@ -77,7 +84,5 @@
         </div>
       </div>
       <script src="script.js"></script>
-</body>
-</html>
 </body>
 </html>
